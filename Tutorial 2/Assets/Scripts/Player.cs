@@ -33,6 +33,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SelfRespawn();
+        }
         if (Input.GetButtonDown("Jump") && isJump == false)
         {
             rb.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
@@ -78,5 +82,10 @@ public class Player : MonoBehaviour
     void SetGameStatus2()
     {
         gameStatue = 2;
+    }
+
+    public void SelfRespawn()
+    {
+        gameStatue = 0;
     }
 }
