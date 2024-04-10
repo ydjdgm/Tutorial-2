@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Player : MonoBehaviour
 {
     Rigidbody rb;
+
+    public int GameStatue { get; set;} //0은 클리어 실패, 1은 클리어, 2는 플레이 중
     
-    public int gameStatue = 2; //0은 클리어 실패, 1은 클리어, 2는 플레이 중
     public GameObject respawn;
-    public GameObject startWall;
+    public GameObject[] items;
     public float moveSpeed;
     public float jumpPower;
     public int gotItem;
@@ -17,9 +19,11 @@ public class Player : MonoBehaviour
 
     bool isJump = true;
 
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        GameStatue = 2;
     }
 
     private void FixedUpdate()
@@ -44,17 +48,21 @@ public class Player : MonoBehaviour
         }
         if(transform.position.y < -15)
         {
-            gameStatue = 0;
+            GameStatue = 0;
         }
-        if(gameStatue == 1)
+        if(GameStatue == 1)
         {
 
-        }else if(gameStatue == 0)
+        }else if(GameStatue == 0)
         {
+            for (int i = 0; i < maxItem; i++)//으아아아아
+            {
+                items[i].SetActive(true);
+            }
             transform.position = respawn.transform.position;
             rb.constraints = RigidbodyConstraints.FreezePosition;
             Invoke("SetGameStatus2", 0.5f);
-        }else if(gameStatue == 2)
+        }else if(GameStatue == 2)
         {
             rb.constraints = RigidbodyConstraints.None;
         }
@@ -68,7 +76,11 @@ public class Player : MonoBehaviour
         }
         if (other.tag == "Finish" && gotItem >= maxItem)
         {
-            gameStatue = 1;
+            GameStatue = 1;
+        }
+        if(other.tag == "Item")
+        {
+            gotItem++;
         }
     }
 
@@ -81,11 +93,11 @@ public class Player : MonoBehaviour
     }
     void SetGameStatus2()
     {
-        gameStatue = 2;
+        GameStatue = 2;
     }
 
     public void SelfRespawn()
     {
-        gameStatue = 0;
+        GameStatue = 0;
     }
 }
