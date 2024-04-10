@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -11,13 +12,16 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     public float jumpPower;
 
-    public int maxItem;
     public int gotItem;
 
     public GameObject respawn;
     public GameObject[] items;
+    public GameManager gameManager;
 
     Rigidbody rb;
+    AudioSource audioSource;
+
+    int maxItem;
 
     float hAxis;
     float vAxis;
@@ -25,11 +29,14 @@ public class Player : MonoBehaviour
     bool jumpDown;
     bool rDown;
 
-    public bool isJump;
+    bool isJump;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
+        maxItem = gameManager.maxItem;
+        gameStatus = 2;
     }
     private void FixedUpdate()
     {
@@ -44,9 +51,12 @@ public class Player : MonoBehaviour
         }else if (other.tag == "Finish" && gotItem >= maxItem)
         {
             gameStatus = 1;
+            SceneManager.LoadScene("Stage"+(gameManager.stage+1));
         }else if(other.tag == "Item")
         {
             gotItem++;
+            gameManager.GotItemTextUpdate(gotItem);
+            audioSource.Play();
         }
     }
     private void Update()

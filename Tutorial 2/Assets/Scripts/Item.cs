@@ -5,7 +5,9 @@ using UnityEngine;
 public class Itme : MonoBehaviour
 {
     public float rotateSpeed;
-
+    private void Awake()
+    {
+    }
     private void Update()
     {
         transform.Rotate(Vector3.up * rotateSpeed * Time.deltaTime, Space.World);
