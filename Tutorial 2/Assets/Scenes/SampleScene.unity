@@ -355,14 +355,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c908782e44bf73449586281034bb94a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameStatus: 2
+  moveSpeed: 0.5
+  jumpPower: 6
+  maxItem: 2
+  gotItem: 0
   respawn: {fileID: 1557528614}
   items:
   - {fileID: 2013971229}
   - {fileID: 694536394}
-  moveSpeed: 6
-  jumpPower: 5.8
-  gotItem: 0
-  maxItem: 2
+  isJump: 0
 --- !u!135 &398748513
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -555,7 +557,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 398748512}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: SelfRespawn
+        m_MethodName: Respawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1388,9 +1390,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 1557528615}
   - {fileID: 398748516}
   - {fileID: 963489485}
-  - {fileID: 1557528615}
   - {fileID: 897916920}
   - {fileID: 167045904}
   - {fileID: 141442672}
