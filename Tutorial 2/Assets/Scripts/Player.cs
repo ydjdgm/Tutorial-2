@@ -8,10 +8,11 @@ public class Player : MonoBehaviour
 {
     Rigidbody rb;
 
-    public int GameStatue { get; set;} //0Àº Å¬¸®¾î ½ÇÆĞ, 1Àº Å¬¸®¾î, 2´Â ÇÃ·¹ÀÌ Áß
+    public int GameStatue { get; set;} //0ì€ í´ë¦¬ì–´ ì‹¤íŒ¨, 1ì€ í´ë¦¬ì–´, 2ëŠ” í”Œë ˆì´ ì¤‘
     
     public GameObject respawn;
     public GameObject[] items;
+    public float timeLimit;
     public float moveSpeed;
     public float jumpPower;
     public int gotItem;
@@ -46,16 +47,16 @@ public class Player : MonoBehaviour
             rb.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
             isJump = true;
         }
-        if(transform.position.y < -15)
+        if(transform.position.y < -15 || timeLimit <= 0f)
         {
             GameStatue = 0;
         }
         if(GameStatue == 1)
         {
-
+            //ê²Œì„ í´ë¦¬ì–´ ë¡œì§
         }else if(GameStatue == 0)
         {
-            for (int i = 0; i < maxItem; i++)//À¸¾Æ¾Æ¾Æ¾Æ
+            for (int i = 0; i < maxItem; i++)//ìœ¼ì•„ì•„ì•„ì•„
             {
                 items[i].SetActive(true);
             }
