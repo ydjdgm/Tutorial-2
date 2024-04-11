@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public Text timeLimitText;
     public Text gotItemText;
     public Text maxItemText;
+    
+    int timeLimitOver5;
+    float timeLimitUnder5;
+    
     private void Awake()
     {
         maxItemText.text = "/ "+maxItem;
@@ -19,7 +23,6 @@ public class GameManager : MonoBehaviour
     void StageTextUpdate()
     {
         stageText.text = "Stage"+stage.ToString();
-        timeLimit -= Time.deltaTime;
     }
     public void GotItemTextUpdate(int gotItem)
     {
@@ -29,13 +32,19 @@ public class GameManager : MonoBehaviour
     {
         StageTextUpdate();
         TimeLimitTextUpdate();
+        
     }
     void TimeLimitTextUpdate()
     {
+        timeLimit -= Time.deltaTime;
         if (timeLimit >= 5f)
         {
-
+            timeLimitOver5 = Mathf.FloorToInt(timeLimit);
+            timeLimitText.text = timeLimitOver5.ToString();
+        }else if(timeLimit < 5f)
+        {
+            timeLimitUnder5 = Mathf.FLoor(timeLimit*100f)/100f;
+            timeLimitText.text = timeLimitUnder5.ToString();
         }
-        timeLimitText.text = timeLimit.ToString();
     }
 }
