@@ -15,7 +15,7 @@ C:/Users/tonyt/OneDrive/ë¬¸ì„œ/GitHub/Tutorial-2/Tutorial 2
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51758
+53326
 Successfully changed project path to: C:/Users/tonyt/OneDrive/ë¬¸ì„œ/GitHub/Tutorial-2/Tutorial 2
 C:/Users/tonyt/OneDrive/ë¬¸ì„œ/GitHub/Tutorial-2/Tutorial 2
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/tonyt/OneDrive/ë¬¸ì„œ/GitHub/Tutorial-2/Tutorial 2
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15152] Host "[IP] 192.168.178.116 [Port] 0 [Flags] 2 [Guid] 3026037634 [EditorId] 3026037634 [Version] 1048832 [Id] WindowsEditor(7,ydjdgm) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [23784] Host "[IP] 192.168.178.116 [Port] 0 [Flags] 2 [Guid] 3103889420 [EditorId] 3103889420 [Version] 1048832 [Id] WindowsEditor(7,ydjdgm) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15152] Host "[IP] 192.168.178.116 [Port] 0 [Flags] 2 [Guid] 3026037634 [EditorId] 3026037634 [Version] 1048832 [Id] WindowsEditor(7,ydjdgm) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [23784] Host "[IP] 192.168.178.116 [Port] 0 [Flags] 2 [Guid] 3103889420 [EditorId] 3103889420 [Version] 1048832 [Id] WindowsEditor(7,ydjdgm) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 11.82 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 13.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.22f1 (887be4894c44)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006279 seconds.
-- Loaded All Assemblies, in  0.448 seconds
+Registered in 0.005577 seconds.
+- Loaded All Assemblies, in  0.345 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.342 seconds
-Domain Reload Profiling: 789ms
-	BeginReloadAssembly (131ms)
+- Finished resetting the current domain, in  0.282 seconds
+Domain Reload Profiling: 626ms
+	BeginReloadAssembly (97ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (76ms)
-	LoadAllAssembliesAndSetupDomain (183ms)
-		LoadAssemblies (129ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (146ms)
+		LoadAssemblies (95ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (179ms)
-				TypeCache.ScanAssembly (159ms)
+		AnalyzeDomain (144ms)
+			TypeCache.Refresh (143ms)
+				TypeCache.ScanAssembly (128ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (343ms)
+	FinalizeReload (282ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (273ms)
+		SetupLoadedEditorAssemblies (224ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (10ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (189ms)
-			ProcessInitializeOnLoadMethodAttributes (60ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (150ms)
+			ProcessInitializeOnLoadMethodAttributes (56ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,58 +115,59 @@ Domain Reload Profiling: 789ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.817 seconds
-Refreshing native plugins compatible for Editor in 3.36 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.611 seconds
+Refreshing native plugins compatible for Editor in 2.90 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.840 seconds
-Domain Reload Profiling: 1654ms
-	BeginReloadAssembly (183ms)
+- Finished resetting the current domain, in  0.617 seconds
+Domain Reload Profiling: 1227ms
+	BeginReloadAssembly (154ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (46ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (55ms)
-	LoadAllAssembliesAndSetupDomain (513ms)
-		LoadAssemblies (392ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (373ms)
+		LoadAssemblies (291ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (225ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (180ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (841ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (150ms)
+				TypeCache.ScanAssembly (136ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (617ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (640ms)
+		SetupLoadedEditorAssemblies (473ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (108ms)
-			ProcessInitializeOnLoadAttributes (486ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 7.44 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3096 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (29.8 KB). Loaded Objects now: 3581.
-Memory consumption went from 136.7 MB to 136.6 MB.
-Total: 15.890200 ms (FindLiveObjects: 0.417000 ms CreateObjectMapping: 0.275500 ms MarkObjects: 15.090500 ms  DeleteObjects: 0.105000 ms)
+Unloading 3097 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (29.7 KB). Loaded Objects now: 3582.
+Memory consumption went from 136.7 MB to 136.7 MB.
+Total: 3.128500 ms (FindLiveObjects: 0.233000 ms CreateObjectMapping: 0.102400 ms MarkObjects: 2.717000 ms  DeleteObjects: 0.074700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
@@ -178,96 +179,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 10968.633839 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-38.wav
-  artifactKey: Guid(84e427d6b66ab4066b6a4dcd0ce819ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-38.wav using Guid(84e427d6b66ab4066b6a4dcd0ce819ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff083d14d235fdffb36a8c47aee93795') in 0.227006 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-11.wav
-  artifactKey: Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-11.wav using Guid(a0010a1a0c474473b81729eb770c485f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05a0adc66ef4d88e8c824ff524d822a') in 0.024633 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-25.wav
-  artifactKey: Guid(5fdb13d3756c84fecac96f5a2d124370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-25.wav using Guid(5fdb13d3756c84fecac96f5a2d124370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f5490368040d50fdf0ee858342b7c87') in 0.023159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-29.wav
-  artifactKey: Guid(80e397195ea2940b69ee7bdbded856a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-29.wav using Guid(80e397195ea2940b69ee7bdbded856a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0df444c2cec90f40f5e8f5bff3e850') in 0.023038 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-08.wav
-  artifactKey: Guid(4e1ff8faed12a475eba9be0e46072269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-08.wav using Guid(4e1ff8faed12a475eba9be0e46072269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2fa108c53dc0fbc393808503ac7242f') in 0.038357 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000582 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-14.wav
-  artifactKey: Guid(b6428d4edb06344ba829da4edd9967c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-14.wav using Guid(b6428d4edb06344ba829da4edd9967c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c351076476244a856a699fc215d130') in 0.025659 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000629 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-31.wav
-  artifactKey: Guid(cf6c0e7fbef9449c98a0cdb5ea0c4d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-31.wav using Guid(cf6c0e7fbef9449c98a0cdb5ea0c4d9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70de4d59d16b82f771063f6716863977') in 0.036219 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-13.wav
-  artifactKey: Guid(72127805eb2bc4e7fbf2e02eca266cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-13.wav using Guid(72127805eb2bc4e7fbf2e02eca266cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a145709c0eaae8aebd93cd4bf5bb21e') in 0.027338 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-06.wav
-  artifactKey: Guid(a235d590ef2a04d1b85b61ef4c21337c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-06.wav using Guid(a235d590ef2a04d1b85b61ef4c21337c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5447e2248ce319ec35eb782b73e8a003') in 0.034522 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 4.463869 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-44.wav
-  artifactKey: Guid(b43d102aac6b145468dcaa94a5cccae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-44.wav using Guid(b43d102aac6b145468dcaa94a5cccae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f555c263488ce3efa96f091c7a0818') in 0.012922 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/CasualGameSounds/DM-CGS-47.wav
-  artifactKey: Guid(d46323e22e74e46baa241cbf48c85671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CasualGameSounds/DM-CGS-47.wav using Guid(d46323e22e74e46baa241cbf48c85671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f494947927bb7923d6cf58dbf9ce1f67') in 0.015835 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ½º·¹µå Á¾·á ¶Ç´Â ÀÀ¿ë ÇÁ·Î±×·¥ ¿äÃ» ¶§¹®¿¡ I/O ÀÛ¾÷ÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

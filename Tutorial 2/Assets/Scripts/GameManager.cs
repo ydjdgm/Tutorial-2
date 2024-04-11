@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public int maxItem;
     public int stage;
-    public double timeLimit;
+    public float timeLimit;
     public Text stageText;
     public Text timeLimitText;
     public Text gotItemText;
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
             timeLimitText.text = timeLimitOver5.ToString();
         }else if(timeLimit < 5f)
         {
-            timeLimitUnder5 = Mathf.FLoor(timeLimit*100f)/100f;
+            timeLimitUnder5 = Mathf.Floor(timeLimit*100f)/100f;
             timeLimitText.text = timeLimitUnder5.ToString();
         }
     }

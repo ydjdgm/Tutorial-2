@@ -483,7 +483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxItem: 2
   stage: 1
-  timeLimit: 100
+  timeLimit: 10
   stageText: {fileID: 30012410}
   timeLimitText: {fileID: 922012306}
   gotItemText: {fileID: 1490916557}
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameStatus: 2
   moveSpeed: 0.5
-  jumpPower: 6
+  jumpPower: 10
   gotItem: 0
   respawn: {fileID: 1557528614}
   items:
@@ -1019,7 +1019,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.09
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1027,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.48
+      value: 6.82
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1523,7 +1523,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.13
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1531,7 +1531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.95
+      value: 17.51
       objectReference: {fileID: 0}
     - target: {fileID: 3502650624361558191, guid: e0eca91d3237a71469bb5dfb83f30a9d, type: 3}
       propertyPath: m_LocalRotation.w

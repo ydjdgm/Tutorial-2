@@ -15,7 +15,6 @@ public class Player : MonoBehaviour
     public int gotItem;
 
     public GameObject respawn;
-    public GameObject[] items;
     public GameManager gameManager;
 
     Rigidbody rb;
@@ -68,7 +67,6 @@ public class Player : MonoBehaviour
         {
             Respawn();
         }
-        Win();//미완성 함수
     }
     void GetInputForFixedUpdate()
     {
@@ -92,32 +90,15 @@ public class Player : MonoBehaviour
             isJump = true;
         }
     }
-    void SetGameStatus0()//Set1은 OnTriggerEnter에 Set2는 
+    void SetGameStatus0()//Set1은 OnTriggerEnter에
     {
-        if(transform.position.y < -15 || rDown)
+        if(transform.position.y < -15 || rDown || gameManager.timeLimit <= 0f)
         {
             gameStatus = 0;
         }
     }
-    void SetGameStatus2()
-    {
-        gameStatus = 2;
-        rb.constraints = RigidbodyConstraints.None;
-        gotItem = 0;
-        for (int i = 0; i < maxItem; i++)
-        {
-            items[i].gameObject.SetActive(true);
-        }
-    }
-    void Win()
-    {
-        //클리어 시 로직
-    }
     public void Respawn()
     {
-        transform.position = respawn.transform.position;
-        rb.constraints = RigidbodyConstraints.FreezePosition;
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
-        Invoke("SetGameStatus2", 0.5f);
+        SceneManager.LoadScene("Stage" + gameManager.stage);
     }
 }
