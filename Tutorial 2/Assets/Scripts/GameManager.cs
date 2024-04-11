@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     public Text timeLimitText;
     public Text gotItemText;
     public Text maxItemText;
+    
+    int timeLimitOver5;
+    float timeLimitUnder5;
+    
     private void Awake()
     {
         maxItemText.text = "/ "+maxItem;
@@ -35,11 +39,12 @@ public class GameManager : MonoBehaviour
         timeLimit -= Time.deltaTime;
         if (timeLimit >= 5f)
         {
-            int timeLimitInt = Mathf.FloorToInt(timeLimit);
-            timeLimitText.text = timeLimitInt.ToString();
-        }else
+            timeLimitOver5 = Mathf.FloorToInt(timeLimit);
+            timeLimitText.text = timeLimitOver5.ToString();
+        }else if(timeLimit < 5f)
         {
-            timeLimitText.text = timeLimit.ToString();
+            timeLimitUnder5 = Mathf.FLoor(timeLimit*100f)/100f;
+            timeLimitText.text = timeLimitUnder5.ToString();
         }
     }
 }
