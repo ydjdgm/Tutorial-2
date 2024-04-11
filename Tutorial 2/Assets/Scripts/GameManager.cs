@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
     void StageTextUpdate()
     {
         stageText.text = "Stage"+stage.ToString();
-        timeLimit -= Time.deltaTime;
     }
     public void GotItemTextUpdate(int gotItem)
     {
@@ -29,13 +28,18 @@ public class GameManager : MonoBehaviour
     {
         StageTextUpdate();
         TimeLimitTextUpdate();
+        
     }
     void TimeLimitTextUpdate()
     {
+        timeLimit -= Time.deltaTime;
         if (timeLimit >= 5f)
         {
-
+            int timeLimitInt = Mathf.FloorToInt(timeLimit);
+            timeLimitText.text = timeLimitInt.ToString();
+        }else
+        {
+            timeLimitText.text = timeLimit.ToString();
         }
-        timeLimitText.text = timeLimit.ToString();
     }
 }
