@@ -1,5 +1,5 @@
 # Tutorial-2
-유니티 연습 복습
+https://www.youtube.com/watch?v=pTc1dakebow&list=PLO-mt5Iu5TeYI4dbYwWP8JqZMC9iuUIW2&index=14
 
 # 계획
 캐주얼 액션 게임
